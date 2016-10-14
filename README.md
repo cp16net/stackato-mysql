@@ -48,6 +48,7 @@ Requires HCF to have 1 service called `stackato-mysql`
 This application will work with RDS or local mysql.
 
 To make this service available follow these steps:
+
 1. `hsm create-instance stackato.hpe.mysql 5.5` - enter the instance name as `stackato-mysql`
 2. `cf hsm enable-service-instance stackato-mysql stackato-mysql` - make sure to add all the endpoints to the security group 
 3. `cf create-service stackato-mysql default stackato-mysql`
