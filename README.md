@@ -7,8 +7,38 @@ This application has 2 API endpoints:
 ## GET /read
 This just reads data from the database and returns it.
 
+Example:
+```
+$ curl http://stackato-mysql.192.168.77.1.nip.io/read
+[
+	{
+		"ID": 1,
+		"CreatedAt": "2016-10-14T15:14:20Z",
+		"UpdatedAt": "2016-10-14T15:14:20Z",
+		"DeletedAt": null,
+		"user": "jymfcvqasi",
+		"email": "jymfcvqasi@gmail.com",
+		"password": "ew2ukz33z4"
+	}
+]
+```
+
 ## POST /write
 This will write an entry into the database and return the data it inserted.
+
+Example:
+```
+$ curl -X POST http://stackato-mysql.192.168.77.1.nip.io/write
+{
+	"ID": 2,
+	"CreatedAt": "2016-10-14T15:25:38.577421739Z",
+	"UpdatedAt": "2016-10-14T15:25:38.577421739Z",
+	"DeletedAt": null,
+	"user": "dmfafmkssg",
+	"email": "dmfafmkssg@gmail.com",
+	"password": "cr0v15juqq"
+}
+```
 
 # Deploy
 To deploy this application you can just do `cf push`
