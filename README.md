@@ -15,6 +15,7 @@ To deploy this application you can just do `cf push`
 
 ## Requirements
 Requires HCF to have 1 service called `stackato-mysql`
+This application will work with RDS or local mysql.
 
 To make this service available follow these steps:
 1. `hsm create-instance stackato.hpe.mysql 5.5` - enter the instance name as `stackato-mysql`
