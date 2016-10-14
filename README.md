@@ -24,7 +24,7 @@ $ curl http://stackato-mysql.192.168.77.1.nip.io/read
 ```
 
 ## POST /write
-This will write an entry into the database and return the data it inserted.
+This will write an entry with random data into the database and return the data it inserted.
 
 Example:
 ```
