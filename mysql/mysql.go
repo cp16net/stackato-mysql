@@ -132,7 +132,7 @@ func Write() (*User, error) {
 	return &user, nil
 }
 
-// Read handler to get coordinate details from havenondemand
+// Read gets the data from the database and returns it
 func Read() ([]User, error) {
 	db, err := dbConnection()
 	if err != nil {
